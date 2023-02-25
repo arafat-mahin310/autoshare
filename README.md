@@ -1,1 +1,2 @@
-# autoshare
+#Facebook Auto Share... 10000 MAX
+# fu*Ck Indonesian Hacker...

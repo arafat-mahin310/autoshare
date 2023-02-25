@@ -76,7 +76,7 @@ ua_random = random.choice([ua_default,ua_samsung,ua_nokia,ua_xiaomi,ua_oppo,ua_v
 kom1 = ("Keren banget bangg:v")
 ###----------[ INI LOGO ]----------###	
 def logo_menu():
- li = '# SELAMAT DATANG DI TOOLS AUTO SHARE FACEBOOK'
+ li = '# Facebook new TOOLS AUTO SHARE FACEBOOK'
  lo = mark(li, style='white')
  sol().print(lo, style='blue')
  banner = f'''    _  _   _ _____ ___    ___ _  _   _   ___ ___ 
@@ -88,8 +88,8 @@ def logo_menu():
 ###----------[ MENU LOGIN ]----------###	
 def login():
 	os.system("clear")
-	cetak(nel(f'   {P2}Login Cookies Terlebih Dahulu Bro\n\n              {H2}--[ BASARI ]--',title=f'{P2} {H2}[ {P2}Selamat Datang {H2}]',width=54,padding=(1,4),style='blue'))
-	cetak(nel(f'{P2} Ambil Cookies Di Kiwi Browser',subtitle=f'{P2}┌─[ Cookies ]',subtitle_align='left',width=54,padding=1,style='blue'))
+	cetak(nel(f'   {P2}Login With Facebook Cookie \n\n              {H2}--[ 𝐀𝐫𝐚𝐟𝐚𝐭 𝐌𝐚𝐡𝐢𝐧 ]--',title=f'{P2} {H2}[ {P2}Selamat Datang {H2}]',width=54,padding=(1,4),style='blue'))
+	cetak(nel(f'{P2} Try To Make Cookie In Kiwi Browser',subtitle=f'{P2}┌─[ Cookies ]',subtitle_align='left',width=54,padding=1,style='blue'))
 	cookie = input(f"{P}   └──> : {H}")
 	try:
 		data = ses.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie})
@@ -124,12 +124,12 @@ def bot_share():
 {P2} You Id          : {id}
 {P2} You Ip          : {ip}
 {P2} Current Date    : {hari}, {tanggal}''',title=f'{P2} {H2}[ {P2}Informasi Pengguna {H2}]',subtitle_align='left',padding=1,style='blue'))
-	cetak(nel(f'{P2}Hai {H2}{nama}{P2}, copy link postingan harus dari facebook lite jika tidak akan terjadi eror saat proses bot share berjalan.',title=f'{P2} {H2}[ {P2}Catatan {H2}]',subtitle_align='left',padding=1,style='blue'))
-	cetak(nel(f'{P2} LINK POSTINGAN',subtitle=f'{P2}┌─',subtitle_align='left',width=25,padding=0,style='blue'))
+	cetak(nel(f'{P2}Hello bro {H2}{nama}{P2}, First Facebook Lite Theke Post Link copy koro✓ New Tool Enjoy.',title=f'{P2} {H2}[ {P2}Catatan {H2}]',subtitle_align='left',padding=1,style='blue'))
+	cetak(nel(f'{P2} POST LINK',subtitle=f'{P2}┌─',subtitle_align='left',width=25,padding=0,style='blue'))
 	link = input(f"{P}   └──> : {H}")
-	cetak(nel(f'{P2} JUMLAH SHARE',subtitle=f'{P2}┌─',subtitle_align='left',width=22,padding=0,style='blue'))
+	cetak(nel(f'{P2} Shares Amount',subtitle=f'{P2}┌─',subtitle_align='left',width=22,padding=0,style='blue'))
 	jumlah = int(input(f"{P}   └──> : {H}"))
-	cetak(nel(f'{P2} AUTO SHARE SEDANG BERJALAN',subtitle=f'{P2}┌─',subtitle_align='left',width=29,padding=0,style='blue'))
+	cetak(nel(f'{P2} AUTO SHARE SENDING',subtitle=f'{P2}┌─',subtitle_align='left',width=29,padding=0,style='blue'))
 	basariganteng = datetime.now()
 	try:
 		n = 0
@@ -140,7 +140,7 @@ def bot_share():
 			data = json.loads(post)
 			if "id" in post:
 				bas = str(datetime.now()-basariganteng).split('.')[0]
-				print(f'{P}\r   └──> {bas} Berhasil Membagikan {H}{n}{P} Postingan {N} ',end='');sys.stdout.flush()
+				print(f'{P}\r   └──> {bas} Berhasil System Start {H}{n}{P} Send Limit {N} ',end='');sys.stdout.flush()
 			else:
 				print("\n")
 				cetak(nel(f'{P2} AUTO SHARE BERHENTI KEMUNGKINAN COOKIE INVALID',width=35,padding=0,style='red'));exit()
